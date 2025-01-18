@@ -68,6 +68,7 @@ sentiment_mapping = {
     'anyway good': 'NEUTRAL',
     'not bad': 'NEUTRAL',
     'need improvement': 'NEUTRAL',
+    'good but needs improvement': 'NEUTRAL',
     'needs improvement': 'NEUTRAL',
     'okay': 'NEUTRAL',
     'fine': 'NEUTRAL',
@@ -192,7 +193,7 @@ def generate_dynamic_response(sentiment, score):
 
 # Function to show "thinking" message on the button itself
 def show_loading_message_on_button():
-    analyze_button.description = "SentiVerse AI is thinking..."
+    analyze_button.description = "SentiVerse AI is analyzing..."
 
 # Function to hide the "thinking" message on the button
 def hide_loading_message_on_button():
